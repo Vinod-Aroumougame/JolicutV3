@@ -913,7 +913,7 @@
                                 <rect key="frame" x="102" y="64" width="171" height="225"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Td-en-mOs">
-                                <rect key="frame" x="7" y="28" width="25" height="26"/>
+                                <rect key="frame" x="7" y="35" width="25" height="26"/>
                                 <state key="normal" image="baaaack.png"/>
                                 <connections>
                                     <action selector="Back:" destination="3A7-EV-UYn" eventType="touchUpInside" id="6hF-3i-zpK"/>
@@ -975,9 +975,9 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BoW-Zm-mXM"/>
-        <segue reference="UGu-xN-1de"/>
+        <segue reference="1Ob-Z9-sqI"/>
         <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="ZP3-YE-phu"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
