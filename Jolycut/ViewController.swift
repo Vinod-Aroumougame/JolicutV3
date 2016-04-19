@@ -111,6 +111,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             while (MyVariables.ErrorCode != 200 || MyVariables.ErrorCode != 404 || MyVariables.ErrorCode != 8)
             {
+                print(MyVariables.ErrorCode)
                 task.resume()
                 if (MyVariables.ErrorCode == 200)
                 {
