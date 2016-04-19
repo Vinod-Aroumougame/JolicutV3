@@ -29,9 +29,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
-        var location = self.locationManager.location
-        var latitude: Double = location!.coordinate.latitude
-        var longitude: Double = location!.coordinate.longitude
+        let location = self.locationManager.location
+        let latitude: Double = location!.coordinate.latitude
+        let longitude: Double = location!.coordinate.longitude
         //User.Latt = latitude
         //User.Long = longitude
         print(latitude)
@@ -44,7 +44,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     
     func upload_request()
     {
-        let url:NSURL = NSURL(string:"http://92.222.74.85/api/authenticate/"+(User.Email as! String)+"/"+(User.Password as! String))!
+        let url:NSURL = NSURL(string:"http://92.222.74.85/api/authenticate/"+(User.Email as String)+"/"+(User.Password as String))!
         let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
@@ -66,8 +66,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
                 print(dataString)
             }
         );
-        
         task.resume()
-        
     }
 }

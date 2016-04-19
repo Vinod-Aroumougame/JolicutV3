@@ -127,8 +127,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     User.Picturefull = User.elems[8].componentsSeparatedByString("\":\"")[1]
                     User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
                     User.Factures = User.elems[9].componentsSeparatedByString("\":\"")[1]
-                    print(User.Firstname)
-                    print(User.Picture)
+                    print(User.elems)
                     MyVariables.ErrorCode = 0
                     return true
                 }
