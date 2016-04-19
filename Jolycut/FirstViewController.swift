@@ -30,7 +30,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         locationManager.startUpdatingLocation()
         
         var location = self.locationManager.location
-        
         var latitude: Double = location!.coordinate.latitude
         var longitude: Double = location!.coordinate.longitude
         //User.Latt = latitude
