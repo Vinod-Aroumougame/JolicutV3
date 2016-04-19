@@ -43,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MpR-eX-7xq">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MpR-eX-7xq">
                                 <rect key="frame" x="0.0" y="22" width="375" height="596"/>
                             </mapView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8SX-K9-f4q">
@@ -65,9 +65,10 @@
                             <constraint firstItem="8SX-K9-f4q" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="ylc-tX-HN2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Map" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="" image="Map" id="Yz6-vD-2eu">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="MapView" destination="MpR-eX-7xq" id="Ukn-bk-XTa"/>
@@ -155,9 +156,10 @@
                             <constraint firstItem="gVG-8s-SNt" firstAttribute="top" secondItem="hQz-ZS-O2x" secondAttribute="top" id="G1B-dn-1Q7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Profil" id="dMD-Ne-VT7">
+                    <tabBarItem key="tabBarItem" title="" image="Profil" id="QCP-QI-Ydb">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRi-LA-hoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -293,9 +295,10 @@
                             <constraint firstAttribute="trailing" secondItem="HcQ-w6-Y6z" secondAttribute="trailing" id="n7I-0x-Wna"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Cut-1" id="f6S-Zg-aLc">
+                    <tabBarItem key="tabBarItem" title="" image="Cut-1" id="YpJ-Hu-7al">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jl-tM-Y4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -353,9 +356,10 @@
                             <constraint firstAttribute="trailing" secondItem="n9q-wK-LKH" secondAttribute="trailing" id="t83-op-0fi"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="List-2" id="cPa-gy-q4n">
+                    <tabBarItem key="tabBarItem" title="" image="List-2" id="nLg-fX-ih6">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
