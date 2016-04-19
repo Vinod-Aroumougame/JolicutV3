@@ -23,6 +23,7 @@ struct User  {
     static var Paytool = NSString()
     static var Adress = NSString()
     static var Telnumb = NSString()
+    static var Picturefull = NSString()
     static var Picture = NSString()
     static var Type = NSString()
     static var Latt = NSString()
@@ -122,10 +123,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     User.Paytool = User.elems[5].componentsSeparatedByString("\":\"")[1]
                     User.Adress = User.elems[6].componentsSeparatedByString("\":\"")[1]
                     User.Telnumb = User.elems[7].componentsSeparatedByString("\":\"")[1]
-                    User.Picture = User.elems[8].componentsSeparatedByString("\":\"")[1]
+                    User.Picturefull = User.elems[8].componentsSeparatedByString("\":\"")[1]
+                    User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
                     User.Factures = User.elems[9].componentsSeparatedByString("\":\"")[1]
                     print(User.Firstname)
-                    print(User.Lastname)
+                    print(User.Picture)
                     MyVariables.ErrorCode = 0
                     return true
                 }
