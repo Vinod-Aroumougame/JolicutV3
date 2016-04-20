@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345.5" y="-46.5"/>
+            <point key="canvasLocation" x="1953.5" y="-53.5"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="aaj-bA-cQH">
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRi-LA-hoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345.5" y="2146.5"/>
+            <point key="canvasLocation" x="1953.5" y="2146.5"/>
         </scene>
         <!--Profile Info View Controller-->
         <scene sceneID="BAO-dU-AnX">
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pho-K6-MzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849.5" y="2146.5"/>
+            <point key="canvasLocation" x="2451.5" y="2146.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MmY-zC-CHE">
@@ -499,7 +499,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jl-tM-Y4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345.5" y="1413.5"/>
+            <point key="canvasLocation" x="1953.5" y="1406.5"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -560,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345.5" y="689.5"/>
+            <point key="canvasLocation" x="1953.5" y="682.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u7S-Sn-BMj">
@@ -645,7 +645,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dg3-Ji-wWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.5" y="2971.5"/>
+            <point key="canvasLocation" x="907.5" y="2971.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UEV-di-CJx">
@@ -918,8 +918,8 @@
                                         <rect key="frame" x="92" y="154" width="283" height="29"/>
                                         <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                         <segments>
-                                            <segment title="Particulier"/>
-                                            <segment title="Coiffeur"/>
+                                            <segment title="client"/>
+                                            <segment title="pro"/>
                                         </segments>
                                         <color key="tintColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
@@ -935,6 +935,7 @@
                         <outlet property="FirstName" destination="oLS-vI-Mjm" id="ouX-bP-EJ2"/>
                         <outlet property="LastName" destination="vxk-mW-HLD" id="rxA-T5-Zbi"/>
                         <outlet property="Password" destination="7AF-55-sAt" id="twi-Zv-D57"/>
+                        <outlet property="TypeOfUser" destination="JsW-Cn-KlM" id="TZV-ef-VTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7LK-IL-XLl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -969,7 +970,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="button:" destination="3A7-EV-UYn" eventType="touchUpInside" id="4Kw-Er-fbd"/>
-                                    <segue destination="49e-Tb-3d3" kind="show" identifier="ProceedToUser" id="ZP3-YE-phu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Login" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Um5-G0-xvP">
@@ -1034,6 +1034,8 @@
                     <connections>
                         <outlet property="login" destination="Um5-G0-xvP" id="9E8-Y2-osK"/>
                         <outlet property="password" destination="qXk-u7-s68" id="h6C-qg-fJq"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="ToClientInterface" id="juO-VL-6X5"/>
+                        <segue destination="Uq0-US-a2u" kind="show" identifier="ToProInterface" id="HK6-kV-baq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Pb-DA-mw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1060,7 +1062,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.5" y="2146.5"/>
+            <point key="canvasLocation" x="1464.5" y="2146.5"/>
         </scene>
     </scenes>
     <resources>
@@ -1081,9 +1083,9 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UGu-xN-1de"/>
-        <segue reference="BoW-Zm-mXM"/>
+        <segue reference="juO-VL-6X5"/>
         <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="1Ob-Z9-sqI"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

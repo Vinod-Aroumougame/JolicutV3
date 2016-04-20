@@ -24,11 +24,18 @@ struct User  {
     static var Adress = NSString()
     static var Telnumb = NSString()
     static var Picturefull = NSString()
+    static var Competences = NSString()
+    static var Prix = NSString()
     static var Picture = NSString()
-    static var Type = NSString()
+    static var Kind = NSString()
     static var Latt = NSString()
     static var Long = NSString()
+    static var Note = NSString()
+    static var Dispo = NSString()
+    static var SocReason = NSString()
+    static var Demand = NSString()
     static var Factures = NSString()
+    
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -42,6 +49,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func button(sender: AnyObject) {
+        CheckUser("toto", sender: self)
+        if (User.Kind.isEqualToString("client")) {
+            performSegueWithIdentifier("ToClientInterface", sender: self)
+        }
+        else if (User.Kind.isEqualToString("pro")){
+            performSegueWithIdentifier("ToProInterface", sender: self)
+        }
     }
     
     func CloseKeyboard() {
@@ -60,7 +74,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+    func CheckUser(identifier: String, sender: AnyObject!) -> Bool {
         let whitespace = NSCharacterSet.whitespaceCharacterSet()
         let range = login.text!.rangeOfCharacterFromSet(whitespace)
         if ( login.text == ("") || password.text == ("") )
@@ -119,15 +133,36 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     User.ID = User.elems[0].componentsSeparatedByString("\":\"")[1]
                     User.Lastname = User.elems[1].componentsSeparatedByString("\":\"")[1]
                     User.Firstname = User.elems[2].componentsSeparatedByString("\":\"")[1]
-                    User.Password = User.elems[3].componentsSeparatedByString("\":\"")[1]
-                    User.Email = User.elems[4].componentsSeparatedByString("\":\"")[1]
-                    User.Paytool = User.elems[5].componentsSeparatedByString("\":\"")[1]
-                    User.Adress = User.elems[6].componentsSeparatedByString("\":\"")[1]
-                    User.Telnumb = User.elems[7].componentsSeparatedByString("\":\"")[1]
-                    User.Picturefull = User.elems[8].componentsSeparatedByString("\":\"")[1]
-                    User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
-                    User.Factures = User.elems[9].componentsSeparatedByString("\":\"")[1]
-                    print(User.elems)
+                    if (User.elems.count == 11)
+                    {
+                        User.Password = User.elems[3].componentsSeparatedByString("\":\"")[1]
+                        User.Email = User.elems[4].componentsSeparatedByString("\":\"")[1]
+                        User.Paytool = User.elems[5].componentsSeparatedByString("\":\"")[1]
+                        User.Adress = User.elems[6].componentsSeparatedByString("\":\"")[1]
+                        User.Telnumb = User.elems[7].componentsSeparatedByString("\":\"")[1]
+                        User.Picturefull = User.elems[8].componentsSeparatedByString("\":\"")[1]
+                        User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
+                        User.Kind = User.elems[9].componentsSeparatedByString("\":\"")[1]
+                        print(User.elems)
+                    }
+                    else if (User.elems.count != 11)
+                    {
+                        User.Competences = User.elems[3].componentsSeparatedByString("\":\"")[1]
+                        User.Password = User.elems[5].componentsSeparatedByString("\":\"")[1]
+                        User.Email = User.elems[4].componentsSeparatedByString("\":\"")[1]
+                        User.Prix = User.elems[6].componentsSeparatedByString("\":\"")[1]
+                        User.Dispo = User.elems[7].componentsSeparatedByString("\":\"")[1]
+                        User.Telnumb = User.elems[8].componentsSeparatedByString("\":\"")[1]
+                        User.Picturefull = User.elems[9].componentsSeparatedByString("\":\"")[1]
+                        User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
+                        User.Kind = User.elems[10].componentsSeparatedByString("\":\"")[1]
+                        User.Note = User.elems[11].componentsSeparatedByString("\":\"")[1]
+                        User.SocReason = User.elems[12].componentsSeparatedByString("\":\"")[1]
+                        User.Latt = User.elems[13].componentsSeparatedByString("\":\"")[1]
+                        User.Long = User.elems[14].componentsSeparatedByString("\":\"")[1]
+                        User.Demand = User.elems[15].componentsSeparatedByString("\":\"")[1]
+                        print(User.elems)
+                    }
                     MyVariables.ErrorCode = 0
                     return true
                 }
