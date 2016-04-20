@@ -17,7 +17,8 @@ class ProProfileInfoViewController: UIViewController {
     @IBOutlet var adresse: UITextField!
     @IBOutlet var tel: UITextField!
     @IBOutlet var password: UITextField!
-    
+    @IBOutlet var Competences: UISegmentedControl!
+        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class ProProfileInfoViewController: UIViewController {
     }
     
     @IBAction func ModifyUserData(sender: AnyObject) {
+        let competences = Competences.titleForSegmentAtIndex(Competences.selectedSegmentIndex)! as String
         if (nom.text != (User.Lastname as String))
         {
             User.Lastname = nom.text!
@@ -75,15 +77,17 @@ class ProProfileInfoViewController: UIViewController {
                     User.Latt = String(format:"%f", coordinates.latitude)
                 }
             })
-            UpdateUser("long", Value: User.Long as String, sender: self)
-            UpdateUser("latt", Value: User.Latt as String, sender: self)
         }
+        UpdateUser("long", Value: User.Long as String, sender: self)
+        UpdateUser("latt", Value: User.Latt as String, sender: self)
         if (tel.text != (User.Telnumb as String))
         {
             User.Telnumb = tel.text!
             let Value = tel.text!.stringByReplacingOccurrencesOfString(" ", withString: "+", options: NSStringCompareOptions.LiteralSearch, range: nil)
             UpdateUser("tel", Value: Value, sender: self)
         }
+        print(competences)
+        UpdateUser("competences", Value: competences, sender: self)
         let myAlert = UIAlertController(title: "Message", message: "Vos données on été modifiés.", preferredStyle: UIAlertControllerStyle.Alert)
         let dismiss = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default){(ACTION) in print("Data changed");}
         myAlert.addAction(dismiss)
@@ -117,14 +121,12 @@ class ProProfileInfoViewController: UIViewController {
                     print("error")
                     return
                 }
-                let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                print(dataString)
+                //let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
             }
         )
         while (MyVariables.ErrorCode != 200 || MyVariables.ErrorCode != 404)
         {
             task.resume()
-            print(MyVariables.data)
             if (MyVariables.ErrorCode == 200)
             {
                 MyVariables.ErrorCode = 0

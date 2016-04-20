@@ -991,7 +991,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJI-Wz-qVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393.5" y="3816.5"/>
+            <point key="canvasLocation" x="1393.5" y="3848.5"/>
         </scene>
         <!--First Tab Pro-->
         <scene sceneID="bhc-3S-cJG">
@@ -1327,6 +1327,15 @@
                                     <action selector="PrintDATA:" destination="R3P-UI-2SM" eventType="touchUpInside" id="GnE-bv-lt2"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pma-uu-vJ0">
+                                <rect key="frame" x="46" y="577" width="283" height="29"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="coupe"/>
+                                    <segment title="coupe+brushing"/>
+                                </segments>
+                                <color key="tintColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1401,6 +1410,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="Competences" destination="pma-uu-vJ0" id="9i1-mT-D4S"/>
                         <outlet property="adresse" destination="xb5-zF-JLr" id="79u-ZB-T2z"/>
                         <outlet property="email" destination="Kj8-wU-2Tm" id="gUg-nX-6JN"/>
                         <outlet property="nom" destination="4MR-U1-fDw" id="4cW-pd-f3Z"/>
@@ -1847,11 +1857,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LMM-kT-D2G"/>
-        <segue reference="99g-7Y-boN"/>
+        <segue reference="gfF-ff-vcH"/>
+        <segue reference="vgZ-Zt-KiY"/>
         <segue reference="NoZ-br-O7U"/>
         <segue reference="BoW-Zm-mXM"/>
-        <segue reference="1Ob-Z9-sqI"/>
-        <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="99g-7Y-boN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

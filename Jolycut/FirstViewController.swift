@@ -41,39 +41,42 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.MapView.setRegion(region, animated: true)
         locationManager.stopUpdatingLocation()
-        
+        upload_request()
         let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
-        let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.348)
+        let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.248)
         
-        var anotation = MKPointAnnotation()
-        anotation.coordinate = location2
-        anotation.title = "Coiffeur"
-        anotation.subtitle = "Localisation d'un Coiffeur"
-        MapView.addAnnotation(anotation)
+        var annotation1 = MKPointAnnotation()
+        annotation1.coordinate = location2
+        annotation1.title = "Coiffeur"
+        annotation1.subtitle = "Subtitle"
+        // here i want to add a button which has a segue to another page.
+        MapView.addAnnotation(annotation1)
     }
     
     func upload_request()
     {
-        let url:NSURL = NSURL(string:"http://92.222.74.85/api/authenticate/"+(User.Email as String)+"/"+(User.Password as String))!
+        print("ICI !")
+        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/coupe+brushing")!
         let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
-        
-                  let data = "data=Hi".dataUsingEncoding(NSUTF8StringEncoding)
-        
-        
+        let data = "data=Hi".dataUsingEncoding(NSUTF8StringEncoding)
         let task = session.uploadTaskWithRequest(request, fromData: data, completionHandler:
             {(data,response,error) in
-                
-                guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                    print("error")
-                    return
+                if (nil != response as? NSHTTPURLResponse) {
+                    let httpResponse = response as? NSHTTPURLResponse
+                    if (httpResponse!.statusCode != 404) {
+                        let urlContents = try! NSString(contentsOfURL: url, encoding: NSUTF8StringEncoding)
+                        guard let _:NSString = urlContents else {
+                            print("error")
+                            return
+                        }
+                        print(urlContents)
+                    }
+                    let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
                 }
-                
-                let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                print(dataString)
             }
         );
         task.resume()

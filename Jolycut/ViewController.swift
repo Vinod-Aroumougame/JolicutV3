@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 struct MyVariables {
     static var ErrorCode = 0
@@ -125,7 +127,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             while (MyVariables.ErrorCode != 200 || MyVariables.ErrorCode != 404 || MyVariables.ErrorCode != 8)
             {
-                print(MyVariables.ErrorCode)
                 task.resume()
                 if (MyVariables.ErrorCode == 200)
                 {
@@ -143,7 +144,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         User.Picturefull = User.elems[8].componentsSeparatedByString("\":\"")[1]
                         User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
                         User.Kind = User.elems[9].componentsSeparatedByString("\":\"")[1]
-                        print(User.elems)
                     }
                     else if (User.elems.count != 11)
                     {
@@ -160,8 +160,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         User.SocReason = User.elems[12].componentsSeparatedByString("\":\"")[1]
                         User.Latt = User.elems[13].componentsSeparatedByString("\":\"")[1]
                         User.Long = User.elems[14].componentsSeparatedByString("\":\"")[1]
-                        User.Demand = User.elems[15].componentsSeparatedByString("\":\"")[1]
-                        print(User.elems)
+                        //User.Demand = User.elems[15].componentsSeparatedByString("\":\"")[1]
                     }
                     MyVariables.ErrorCode = 0
                     return true
