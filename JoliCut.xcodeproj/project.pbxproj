@@ -16,6 +16,7 @@
 		19C66F421CC6C45900F04144 /* ChooseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F411CC6C45900F04144 /* ChooseTypeViewController.swift */; };
 		19C66F441CC7AA1600F04144 /* ProProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F431CC7AA1600F04144 /* ProProfileViewController.swift */; };
 		19C66F461CC7AA2A00F04144 /* ProProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F451CC7AA2A00F04144 /* ProProfileInfoViewController.swift */; };
+		19C66F481CC81C1A00F04144 /* HaircutterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F471CC81C1A00F04144 /* HaircutterListViewController.swift */; };
 		19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */; };
 		7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */; };
 		A31FEE521CC1594D00FE0583 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4A1CC1594D00FE0583 /* cross.png */; };
@@ -76,6 +77,7 @@
 		19C66F411CC6C45900F04144 /* ChooseTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTypeViewController.swift; sourceTree = "<group>"; };
 		19C66F431CC7AA1600F04144 /* ProProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProProfileViewController.swift; sourceTree = "<group>"; };
 		19C66F451CC7AA2A00F04144 /* ProProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProProfileInfoViewController.swift; sourceTree = "<group>"; };
+		19C66F471CC81C1A00F04144 /* HaircutterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaircutterListViewController.swift; sourceTree = "<group>"; };
 		19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
 		797BB21E1CC12505009ED915 /* Jolicut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jolicut-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A34301971CBE9EF300A18E8F /* AppDelegate.swift */,
+				19C66F471CC81C1A00F04144 /* HaircutterListViewController.swift */,
 				19C66F411CC6C45900F04144 /* ChooseTypeViewController.swift */,
 				194660DE1CC644900006729B /* ProfileViewController.swift */,
 				194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */,
@@ -415,6 +418,7 @@
 				19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */,
 				A343019A1CBE9EF300A18E8F /* FirstViewController.swift in Sources */,
 				19C66F421CC6C45900F04144 /* ChooseTypeViewController.swift in Sources */,
+				19C66F481CC81C1A00F04144 /* HaircutterListViewController.swift in Sources */,
 				A37FF7AC1CC5175100E2BAD0 /* JolicutViewController.swift in Sources */,
 				7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */,
 				194660DF1CC644900006729B /* ProfileViewController.swift in Sources */,
