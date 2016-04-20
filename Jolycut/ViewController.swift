@@ -134,7 +134,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     User.ID = User.elems[0].componentsSeparatedByString("\":\"")[1]
                     User.Lastname = User.elems[1].componentsSeparatedByString("\":\"")[1]
                     User.Firstname = User.elems[2].componentsSeparatedByString("\":\"")[1]
-                    if (User.elems.count == 11)
+                    if (User.elems.count <= 13)
                     {
                         User.Password = User.elems[3].componentsSeparatedByString("\":\"")[1]
                         User.Email = User.elems[4].componentsSeparatedByString("\":\"")[1]
@@ -145,7 +145,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
                         User.Kind = User.elems[9].componentsSeparatedByString("\":\"")[1]
                     }
-                    else if (User.elems.count != 11)
+                    else if (User.elems.count > 13)
                     {
                         User.Competences = User.elems[3].componentsSeparatedByString("\":\"")[1]
                         User.Password = User.elems[5].componentsSeparatedByString("\":\"")[1]
@@ -153,15 +153,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         User.Prix = User.elems[6].componentsSeparatedByString("\":\"")[1]
                         User.Dispo = User.elems[7].componentsSeparatedByString("\":\"")[1]
                         User.Telnumb = User.elems[8].componentsSeparatedByString("\":\"")[1]
-                        User.Picturefull = User.elems[9].componentsSeparatedByString("\":\"")[1]
+                        User.Adress = User.elems[9].componentsSeparatedByString("\":\"")[1]
+                        User.Picturefull = User.elems[10].componentsSeparatedByString("\":\"")[1]
                         User.Picture = User.Picturefull.componentsSeparatedByString(",")[1]
-                        User.Kind = User.elems[10].componentsSeparatedByString("\":\"")[1]
-                        User.Note = User.elems[11].componentsSeparatedByString("\":\"")[1]
-                        User.SocReason = User.elems[12].componentsSeparatedByString("\":\"")[1]
-                        User.Latt = User.elems[13].componentsSeparatedByString("\":\"")[1]
-                        User.Long = User.elems[14].componentsSeparatedByString("\":\"")[1]
+                        User.Kind = User.elems[11].componentsSeparatedByString("\":\"")[1]
+                        User.Note = User.elems[12].componentsSeparatedByString("\":\"")[1]
+                        User.SocReason = User.elems[13].componentsSeparatedByString("\":\"")[1]
+                        User.Latt = User.elems[14].componentsSeparatedByString("\":\"")[1]
+                        User.Long = User.elems[15].componentsSeparatedByString("\":\"")[1]
                         //User.Demand = User.elems[15].componentsSeparatedByString("\":\"")[1]
                     }
+                    print("check")
                     MyVariables.ErrorCode = 0
                     return true
                 }
@@ -187,7 +189,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return false
     }
-    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

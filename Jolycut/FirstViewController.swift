@@ -26,31 +26,37 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+        if (nil == locationManager.location)
+        {
+            locationManager.requestAlwaysAuthorization()
+        }
         locationManager.startUpdatingLocation()
-        
-        let location = self.locationManager.location
-        let latitude: Double = location!.coordinate.latitude
-        let longitude: Double = location!.coordinate.longitude
-        User.Latt = String(format:"%f", latitude)
-        User.Long = String(format:"%f", longitude)
-        print(latitude)
-        print(longitude)
-        
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-        self.MapView.setRegion(region, animated: true)
-        locationManager.stopUpdatingLocation()
-        upload_request()
-        let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
-        let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.248)
-        
-        var annotation1 = MKPointAnnotation()
-        annotation1.coordinate = location2
-        annotation1.title = "Coiffeur"
-        annotation1.subtitle = "Subtitle"
-        // here i want to add a button which has a segue to another page.
-        MapView.addAnnotation(annotation1)
+        if (nil != locationManager.location)
+        {
+            let location = self.locationManager.location
+            let latitude: Double = location!.coordinate.latitude
+            let longitude: Double = location!.coordinate.longitude
+            User.Latt = String(format:"%f", latitude)
+            User.Long = String(format:"%f", longitude)
+            print(latitude)
+            print(longitude)
+            
+            let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            self.MapView.setRegion(region, animated: true)
+            locationManager.stopUpdatingLocation()
+            upload_request()
+            let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
+            let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.248)
+            
+            var annotation1 = MKPointAnnotation()
+            annotation1.coordinate = location2
+            annotation1.title = "Coiffeur"
+            annotation1.subtitle = "Subtitle"
+            // here i want to add a button which has a segue to another page.
+            MapView.addAnnotation(annotation1)
+
+        }
     }
     
     func upload_request()
