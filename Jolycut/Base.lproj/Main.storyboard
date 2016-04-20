@@ -894,6 +894,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="oAO-WP-7fB">
                                 <rect key="frame" x="0.0" y="458" width="375" height="2"/>
                             </imageView>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-Ef-8Yk">
+                                <rect key="frame" x="0.0" y="124" width="45" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="e0y-2x-VJy" kind="show" id="7xO-vL-maw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1909,12 +1916,13 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LMM-kT-D2G"/>
-        <segue reference="gfF-ff-vcH"/>
-        <segue reference="vgZ-Zt-KiY"/>
-        <segue reference="NoZ-br-O7U"/>
         <segue reference="BoW-Zm-mXM"/>
+        <segue reference="NoZ-br-O7U"/>
+        <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="gfF-ff-vcH"/>
+        <segue reference="7xO-vL-maw"/>
         <segue reference="99g-7Y-boN"/>
+        <segue reference="LMM-kT-D2G"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
