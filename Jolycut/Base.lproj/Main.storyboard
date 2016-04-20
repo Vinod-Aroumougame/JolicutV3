@@ -621,25 +621,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom / Prénom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yG-gp-cbp">
                                 <rect key="frame" x="126" y="138" width="123" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qd-3Z-uQV">
                                 <rect key="frame" x="20" y="179" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date du RDV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-3S-oBP">
                                 <rect key="frame" x="20" y="221" width="110" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npb-iD-zb1">
                                 <rect key="frame" x="20" y="264" width="110" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJt-40-Byk">
@@ -896,19 +896,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom / Prénom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-zX-xla">
                                 <rect key="frame" x="126" y="144" width="123" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descriptions / Prestations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LQ-Co-Ebz">
                                 <rect key="frame" x="20" y="205" width="335" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za8-Oe-vpV">
                                 <rect key="frame" x="20" y="251" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lM5-Qv-yhA">
@@ -953,6 +953,25 @@
             <point key="canvasLocation" x="1393.5" y="4604.5"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="mWx-oQ-tWU">
+            <objects>
+                <viewController id="f2L-N7-hBI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d0C-Cw-Fc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="K5F-4R-XTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ecv-ga-2At">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnE-SM-ssj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972.5" y="4604.5"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="wrN-p8-Z6u">
             <objects>
                 <viewController id="6zc-Fa-CrC" sceneMemberID="viewController">
@@ -968,6 +987,7 @@
                     <tabBarItem key="tabBarItem" title="" image="qrcode" id="HXV-e8-WZR">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJI-Wz-qVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1015,10 +1035,10 @@
             </objects>
             <point key="canvasLocation" x="907.5" y="2971.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Pro Profile View Controller-->
         <scene sceneID="UEV-di-CJx">
             <objects>
-                <viewController id="dwx-d7-AJ2" sceneMemberID="viewController">
+                <viewController id="dwx-d7-AJ2" customClass="ProProfileViewController" customModule="JoliCut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RDE-hf-Ec2"/>
                         <viewControllerLayoutGuide type="bottom" id="Jfs-lq-VOj"/>
@@ -1033,6 +1053,9 @@
                                 <state key="normal" title="Mes informations">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="R3P-UI-2SM" kind="modal" modalTransitionStyle="coverVertical" id="d8l-Fv-cCD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgq-ki-RGP">
                                 <rect key="frame" x="20" y="219" width="335" height="30"/>
@@ -1040,6 +1063,9 @@
                                 <state key="normal" title="Mes prestations">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="f2L-N7-hBI" kind="show" id="Uie-rF-PIu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8k-jc-2az">
                                 <rect key="frame" x="20" y="287" width="335" height="30"/>
@@ -1061,6 +1087,9 @@
                                 <state key="normal" title="Déconnexion">
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Quit:" destination="dwx-d7-AJ2" eventType="touchUpInside" id="lrF-lf-MI6"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ack.png" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-RT-Egi">
                                 <rect key="frame" x="333" y="188" width="22" height="23"/>
@@ -1093,6 +1122,15 @@
                                     <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM0-Or-pGL">
+                                <rect key="frame" x="148" y="44" width="78" height="73"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ImageButton:" destination="dwx-d7-AJ2" eventType="touchUpInside" id="isU-n8-H3p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1100,15 +1138,18 @@
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ProfilImage" destination="6j1-iQ-h68" id="ykc-Yg-wz5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ihf-dr-0YU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1393.5" y="5352.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Pro Profile Info View Controller-->
         <scene sceneID="lbr-Go-rea">
             <objects>
-                <viewController id="R3P-UI-2SM" sceneMemberID="viewController">
+                <viewController id="R3P-UI-2SM" customClass="ProProfileInfoViewController" customModule="JoliCut" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pOe-M7-UOh"/>
                         <viewControllerLayoutGuide type="bottom" id="zVe-ao-sGw"/>
@@ -1209,6 +1250,8 @@
                                 </state>
                                 <connections>
                                     <action selector="Back:" destination="Q30-Qr-PPs" eventType="touchUpInside" id="IML-4B-71O"/>
+                                    <action selector="Back:" destination="R3P-UI-2SM" eventType="touchUpInside" id="Jfa-Kf-wDa"/>
+                                    <segue destination="Uq0-US-a2u" kind="presentation" identifier="Back" modalTransitionStyle="coverVertical" id="NoZ-br-O7U"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-c6-ksC">
@@ -1253,6 +1296,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ModifyUserData:" destination="Q30-Qr-PPs" eventType="touchUpInside" id="Dc1-Tt-KbO"/>
+                                    <action selector="ModifyUserData:" destination="R3P-UI-2SM" eventType="touchUpInside" id="FKS-Xo-4my"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pen23.png" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-Jh-ouj">
@@ -1276,6 +1320,13 @@
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmp-J0-wVg">
+                                <rect key="frame" x="251" y="93" width="62" height="30"/>
+                                <state key="normal" title="MERDE !"/>
+                                <connections>
+                                    <action selector="PrintDATA:" destination="R3P-UI-2SM" eventType="touchUpInside" id="GnE-bv-lt2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1349,6 +1400,14 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="adresse" destination="xb5-zF-JLr" id="79u-ZB-T2z"/>
+                        <outlet property="email" destination="Kj8-wU-2Tm" id="gUg-nX-6JN"/>
+                        <outlet property="nom" destination="4MR-U1-fDw" id="4cW-pd-f3Z"/>
+                        <outlet property="password" destination="mo5-Kl-rmU" id="kJA-y4-YuZ"/>
+                        <outlet property="prenom" destination="P1Q-fy-9ej" id="3en-oz-d4s"/>
+                        <outlet property="tel" destination="nje-MZ-EBQ" id="IB8-Mg-zfr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdU-hI-kTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1750,6 +1809,23 @@
             </objects>
             <point key="canvasLocation" x="1464.5" y="2146.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="BRB-Cf-wuJ">
+            <objects>
+                <viewController id="yRj-T5-ypE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uwY-js-7an"/>
+                        <viewControllerLayoutGuide type="bottom" id="OEU-4R-3T3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nuk-6g-5A8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVS-5Q-E1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Circled-inscr.png" width="44" height="44"/>
@@ -1770,11 +1846,12 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vgZ-Zt-KiY"/>
-        <segue reference="UGu-xN-1de"/>
-        <segue reference="BoW-Zm-mXM"/>
         <segue reference="LMM-kT-D2G"/>
         <segue reference="99g-7Y-boN"/>
+        <segue reference="NoZ-br-O7U"/>
+        <segue reference="BoW-Zm-mXM"/>
+        <segue reference="1Ob-Z9-sqI"/>
+        <segue reference="vgZ-Zt-KiY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
