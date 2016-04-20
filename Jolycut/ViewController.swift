@@ -14,6 +14,13 @@ struct MyVariables {
     static var ErrorCode = 0
     static var data = NSString()
 }
+
+struct MapParams {
+    static var SearchRadius = 5.0
+    static var Proffesionals = NSString()
+    static var EachProUser = NSArray()
+}
+
 struct User  {
     static var bit = NSArray()
     static var elems = NSArray()
@@ -37,7 +44,6 @@ struct User  {
     static var SocReason = NSString()
     static var Demand = NSString()
     static var Factures = NSString()
-    
 }
 
 class ViewController: UIViewController, UITextFieldDelegate {

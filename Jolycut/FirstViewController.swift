@@ -38,33 +38,43 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
             let longitude: Double = location!.coordinate.longitude
             User.Latt = String(format:"%f", latitude)
             User.Long = String(format:"%f", longitude)
-            print(latitude)
-            print(longitude)
+            print(User.Latt)
+            print(User.Long)
             
             let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
             self.MapView.setRegion(region, animated: true)
             locationManager.stopUpdatingLocation()
             upload_request()
+        }
+    }
+    
+    func addMarkers() {
+        var i = 0
+        while ( i != MapParams.EachProUser.count-1) {
+            let USERDATA = MapParams.EachProUser[i].componentsSeparatedByString("\",\"")
+            let lattitude = USERDATA[13].componentsSeparatedByString("\":\"")[1]
+            let longitude = USERDATA[14].componentsSeparatedByString("\":\"")[1]
+            let Name = USERDATA[1].componentsSeparatedByString("\":\"")[1]
+            let Kind = USERDATA[3].componentsSeparatedByString("\":\"")[1]
             let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
-            let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.248)
-            
+            let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: Double(lattitude)!, longitude: Double(longitude)!)
             var annotation1 = MKPointAnnotation()
             annotation1.coordinate = location2
-            annotation1.title = "Coiffeur"
-            annotation1.subtitle = "Subtitle"
-            // here i want to add a button which has a segue to another page.
+            annotation1.title = Name
+            annotation1.subtitle = Kind
             MapView.addAnnotation(annotation1)
-
+            print(annotation1.title)
+            i++;
         }
     }
     
     func upload_request()
     {
         print("ICI !")
-        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/coupe+brushing")!
+        MapParams.SearchRadius = 500
+        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/brushing/500")!
         let session = NSURLSession.sharedSession()
-        
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
@@ -79,12 +89,24 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
                             print("error")
                             return
                         }
-                        print(urlContents)
+                        MapParams.Proffesionals = urlContents
+                        MapParams.EachProUser = MapParams.Proffesionals.componentsSeparatedByString("]}")
                     }
-                    let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    MyVariables.ErrorCode = httpResponse!.statusCode
+                    print("Fin de recherche http :")
+                    guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
+                        print("error")
+                        return
+                    }
                 }
-            }
-        );
+                print("1er coiffeur")
+                print(MapParams.EachProUser[0])
+                print("2eme coiffeur")
+                print(MapParams.EachProUser[1])
+                print("lenght")
+                print(MapParams.EachProUser.count)
+                self.addMarkers()
+        });
         task.resume()
     }
 }
