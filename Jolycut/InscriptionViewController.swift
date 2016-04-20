@@ -13,6 +13,7 @@ class InscriptionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var Email: UITextField!
     @IBOutlet var Password: UITextField!
+    @IBOutlet var PasswordMatch: UITextField!
     @IBOutlet var LastName: UITextField!
     @IBOutlet var FirstName: UITextField!
     @IBOutlet var TypeOfUser: UISegmentedControl!
@@ -51,6 +52,14 @@ class InscriptionViewController: UIViewController, UITextFieldDelegate {
         let range0 = Password.text!.rangeOfCharacterFromSet(whitespace)
         let range1 = LastName.text!.rangeOfCharacterFromSet(whitespace)
         let range2 = FirstName.text!.rangeOfCharacterFromSet(whitespace)
+        if (Password.text != PasswordMatch.text)
+        {
+            let myAlert = UIAlertController(title: "Error", message: "Password Must Match", preferredStyle: UIAlertControllerStyle.Alert)
+            let dismiss = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default){(ACTION) in print("Dismissed");}
+            myAlert.addAction(dismiss)
+            self.presentViewController(myAlert, animated: true, completion: nil)
+            return false
+        }
         if (Email.text == ("") || Password.text == (""))
         {
             let myAlert = UIAlertController(title: "Error", message: "Can't let empty field !", preferredStyle: UIAlertControllerStyle.Alert)
@@ -106,18 +115,10 @@ class InscriptionViewController: UIViewController, UITextFieldDelegate {
             {
                 task.resume()
                 print(MyVariables.data)
-                if (MyVariables.ErrorCode == 200)
+                if (MyVariables.ErrorCode == 404)
                 {
                     MyVariables.ErrorCode = 0
-                    let myAlert = UIAlertController(title: "SUCCESS !", message: "Your inscription is Finished", preferredStyle: UIAlertControllerStyle.Alert)
-                    myAlert.addAction(UIAlertAction(title:"Login Now !", style: .Default, handler:  {action in self.performSegueWithIdentifier("Connect", sender: self)}))
-                    self.presentViewController(myAlert, animated: true, completion: nil)
-                    return true
-                }
-                else if (MyVariables.ErrorCode == 404)
-                {
-                    MyVariables.ErrorCode = 0
-                    let myAlert = UIAlertController(title: "Error", message: "Your inscription Failed", preferredStyle: UIAlertControllerStyle.Alert)
+                    let myAlert = UIAlertController(title: "Success", message: "Your inscription is complete", preferredStyle: UIAlertControllerStyle.Alert)
                     myAlert.addAction(UIAlertAction(title:"Login Now !", style: .Default, handler:  {action in self.performSegueWithIdentifier("Connect", sender: self)}))
                     self.presentViewController(myAlert, animated: true, completion: nil)
                     return true

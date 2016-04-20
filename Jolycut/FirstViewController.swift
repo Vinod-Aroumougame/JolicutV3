@@ -32,14 +32,24 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         let location = self.locationManager.location
         let latitude: Double = location!.coordinate.latitude
         let longitude: Double = location!.coordinate.longitude
-        //User.Latt = latitude
-        //User.Long = longitude
+        User.Latt = String(format:"%f", latitude)
+        User.Long = String(format:"%f", longitude)
         print(latitude)
         print(longitude)
+        
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.MapView.setRegion(region, animated: true)
         locationManager.stopUpdatingLocation()
+        
+        let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
+        let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 48.853, longitude: 2.348)
+        
+        var anotation = MKPointAnnotation()
+        anotation.coordinate = location2
+        anotation.title = "Coiffeur"
+        anotation.subtitle = "Localisation d'un Coiffeur"
+        MapView.addAnnotation(anotation)
     }
     
     func upload_request()
