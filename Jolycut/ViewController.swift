@@ -16,7 +16,7 @@ struct MyVariables {
 }
 
 struct MapParams {
-    static var SearchRadius = 5.0
+    static var SearchRadius = "10"
     static var Proffesionals = NSString()
     static var EachProUser = NSArray()
 }

@@ -21,15 +21,13 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
         
         self.MapView.mapType = MKMapType.Standard
         self.MapView.showsUserLocation = true
-        
-        self.MapView.removeAnnotations(self.MapView.annotations)
+        print("removing...")
+        let allAnnotations = self.MapView.annotations
+        self.MapView.removeAnnotations(allAnnotations)
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        if (nil == locationManager.location)
-        {
-            locationManager.requestAlwaysAuthorization()
-        }
+        locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         if (nil != locationManager.location)
         {
@@ -72,8 +70,8 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     func upload_request()
     {
         print("ICI !")
-        MapParams.SearchRadius = 500
-        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/brushing/500")!
+        print(MapParams.SearchRadius)
+        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/brushing/"+MapParams.SearchRadius)!
         let session = NSURLSession.sharedSession()
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
