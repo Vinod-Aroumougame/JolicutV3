@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ProfileInfoViewController: UIViewController {
+class ProfileInfoViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var nom: UITextField!
     @IBOutlet var prenom: UITextField!
@@ -128,5 +128,10 @@ class ProfileInfoViewController: UIViewController {
             }
         }
         return false
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
