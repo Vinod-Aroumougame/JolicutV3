@@ -19,6 +19,7 @@
 		19C66F481CC81C1A00F04144 /* HaircutterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F471CC81C1A00F04144 /* HaircutterListViewController.swift */; };
 		19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */; };
 		7902B5B61CC6122E00F861B8 /* InscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */; };
+		794265841CC8B13E004B89C7 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 794265831CC8B13E004B89C7 /* ios */; };
 		A31FEE521CC1594D00FE0583 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4A1CC1594D00FE0583 /* cross.png */; };
 		A31FEE531CC1594D00FE0583 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4B1CC1594D00FE0583 /* circle.png */; };
 		A31FEE541CC1594D00FE0583 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = A31FEE4C1CC1594D00FE0583 /* arrows.png */; };
@@ -80,6 +81,7 @@
 		19C66F471CC81C1A00F04144 /* HaircutterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaircutterListViewController.swift; sourceTree = "<group>"; };
 		19E97CFA1CC0D2A800EE98B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7902B5B51CC6122E00F861B8 /* InscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InscriptionViewController.swift; sourceTree = "<group>"; };
+		794265831CC8B13E004B89C7 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; path = "../../../../Downloads/2016-04-20/ios"; sourceTree = "<group>"; };
 		797BB21E1CC12505009ED915 /* Jolicut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Jolicut-Bridging-Header.h"; sourceTree = "<group>"; };
 		A31FEE4A1CC1594D00FE0583 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		A31FEE4B1CC1594D00FE0583 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		A32923C51CC12150006544B9 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				794265831CC8B13E004B89C7 /* ios */,
 				A37FF7BF1CC7A18C00E2BAD0 /* technology-gold.png */,
 				A37FF7BD1CC6921D00E2BAD0 /* baaaack.png */,
 				A37FF7B91CC6870200E2BAD0 /* pen23.png */,
@@ -378,6 +381,7 @@
 				A34301A41CBE9EF300A18E8F /* LaunchScreen.storyboard in Resources */,
 				A34301A11CBE9EF300A18E8F /* Assets.xcassets in Resources */,
 				A31FEE701CC271C900FE0583 /* cross2.png in Resources */,
+				794265841CC8B13E004B89C7 /* ios in Resources */,
 				A31FEE531CC1594D00FE0583 /* circle.png in Resources */,
 				A31FEE521CC1594D00FE0583 /* cross.png in Resources */,
 				A343019F1CBE9EF300A18E8F /* Main.storyboard in Resources */,
