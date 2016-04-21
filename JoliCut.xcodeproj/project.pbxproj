@@ -34,6 +34,9 @@
 		1944A0271CC8F27A00F54CCC /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1944A0111CC8F27A00F54CCC /* iTunesArtwork@2x.png */; };
 		1944A0281CC8F27A00F54CCC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1944A0121CC8F27A00F54CCC /* README.md */; };
 		1944A02A1CC8F94600F54CCC /* MapParamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944A0291CC8F94600F54CCC /* MapParamsViewController.swift */; };
+		1944A02C1CC9077000F54CCC /* Haircutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944A02B1CC9077000F54CCC /* Haircutter.swift */; };
+		1944A0301CC9147800F54CCC /* HaircutterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944A02F1CC9147800F54CCC /* HaircutterList.swift */; };
+		1944A0321CC9195A00F54CCC /* HaircutterCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1944A0311CC9195A00F54CCC /* HaircutterCellController.swift */; };
 		194660DC1CC61AC90006729B /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */; };
 		194660DF1CC644900006729B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194660DE1CC644900006729B /* ProfileViewController.swift */; };
 		19C66F421CC6C45900F04144 /* ChooseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C66F411CC6C45900F04144 /* ChooseTypeViewController.swift */; };
@@ -118,6 +121,9 @@
 		1944A0111CC8F27A00F54CCC /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		1944A0121CC8F27A00F54CCC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1944A0291CC8F94600F54CCC /* MapParamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParamsViewController.swift; sourceTree = "<group>"; };
+		1944A02B1CC9077000F54CCC /* Haircutter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Haircutter.swift; sourceTree = "<group>"; };
+		1944A02F1CC9147800F54CCC /* HaircutterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaircutterList.swift; sourceTree = "<group>"; };
+		1944A0311CC9195A00F54CCC /* HaircutterCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaircutterCellController.swift; sourceTree = "<group>"; };
 		194660DB1CC61AC90006729B /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
 		194660DE1CC644900006729B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		19C66F411CC6C45900F04144 /* ChooseTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseTypeViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +249,9 @@
 				19C66F451CC7AA2A00F04144 /* ProProfileInfoViewController.swift */,
 				19C66F431CC7AA1600F04144 /* ProProfileViewController.swift */,
 				1944A0291CC8F94600F54CCC /* MapParamsViewController.swift */,
+				1944A02B1CC9077000F54CCC /* Haircutter.swift */,
+				1944A0311CC9195A00F54CCC /* HaircutterCellController.swift */,
+				1944A02F1CC9147800F54CCC /* HaircutterList.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -523,6 +532,9 @@
 				19C66F461CC7AA2A00F04144 /* ProProfileInfoViewController.swift in Sources */,
 				1944A0281CC8F27A00F54CCC /* README.md in Sources */,
 				19E97CFB1CC0D2A800EE98B2 /* ViewController.swift in Sources */,
+				1944A0321CC9195A00F54CCC /* HaircutterCellController.swift in Sources */,
+				1944A0301CC9147800F54CCC /* HaircutterList.swift in Sources */,
+				1944A02C1CC9077000F54CCC /* Haircutter.swift in Sources */,
 				A343019A1CBE9EF300A18E8F /* FirstViewController.swift in Sources */,
 				19C66F421CC6C45900F04144 /* ChooseTypeViewController.swift in Sources */,
 				19C66F481CC81C1A00F04144 /* HaircutterListViewController.swift in Sources */,

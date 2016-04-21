@@ -46,8 +46,13 @@
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
         </mutableArray>
         <mutableArray key="Comfortaa-Regular.ttf">
+            <string>Comfortaa</string>
             <string>Comfortaa</string>
             <string>Comfortaa</string>
             <string>Comfortaa</string>
@@ -113,7 +118,7 @@
                             </navigationBar>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8M-uA-JZc">
                                 <rect key="frame" x="0.0" y="22" width="45" height="45"/>
-                                <color key="backgroundColor" red="1" green="0.54234792163721168" blue="0.098306002645263235" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.14200721153846152" green="0.13764813332727241" blue="0.13928989806918851" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="yh6-Bq-KS0"/>
                                 </constraints>
@@ -169,7 +174,7 @@
                                 <color key="barTintColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                             </navigationBar>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-Ks-CDE">
-                                <rect key="frame" x="16" y="107" width="343" height="32"/>
+                                <rect key="frame" x="16" y="107" width="343" height="35"/>
                                 <segments>
                                     <segment title="Coupe"/>
                                     <segment title="Brushing"/>
@@ -183,20 +188,42 @@
                                 </constraints>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prestation recherché" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg0-kV-wpd">
-                                <rect key="frame" x="16" y="75" width="176" height="21"/>
+                                <rect key="frame" x="16" y="75" width="157" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="892-Sv-t0C">
-                                <rect key="frame" x="16" y="153" width="71" height="18"/>
+                                <rect key="frame" x="16" y="156" width="67" height="15"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyq-03-0bN">
-                                <rect key="frame" x="82" y="331" width="210" height="30"/>
-                                <state key="normal" title="Appliquer les changements"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yft-C2-ab6">
+                                <rect key="frame" x="0.0" y="65" width="375" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="c3o-0i-CaR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-xO-H21">
+                                <rect key="frame" x="0.0" y="146" width="375" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="PJp-68-BpW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="kKg-5t-unj">
+                                <rect key="frame" x="0.0" y="217" width="375" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="yaQ-qe-I4r"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyq-03-0bN">
+                                <rect key="frame" x="0.0" y="618" width="375" height="51"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Appliquer les changements">
+                                    <color key="titleColor" red="0.91764705882352937" green="0.68235294117647061" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="change:" destination="e0y-2x-VJy" eventType="touchUpInside" id="Ch0-3D-Dya"/>
                                 </connections>
@@ -204,26 +231,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kKg-5t-unj" firstAttribute="leading" secondItem="Yft-C2-ab6" secondAttribute="leading" id="2qS-7U-vOh"/>
                             <constraint firstItem="AhD-pR-wr6" firstAttribute="leading" secondItem="hgZ-jp-VG6" secondAttribute="leading" id="3jK-5V-yh0"/>
+                            <constraint firstItem="kKg-5t-unj" firstAttribute="trailing" secondItem="Yft-C2-ab6" secondAttribute="trailing" id="3jl-tx-o12"/>
                             <constraint firstAttribute="trailing" secondItem="AhD-pR-wr6" secondAttribute="trailing" id="4si-K0-1Bt"/>
+                            <constraint firstItem="lyq-03-0bN" firstAttribute="top" secondItem="fcy-gX-xcn" secondAttribute="top" id="72y-7R-CNs"/>
                             <constraint firstItem="AaW-Mi-eM5" firstAttribute="top" secondItem="892-Sv-t0C" secondAttribute="bottom" constant="8" id="8No-BT-Xb2"/>
+                            <constraint firstItem="Yft-C2-ab6" firstAttribute="leading" secondItem="lyq-03-0bN" secondAttribute="leading" id="AgW-Mf-Rx2"/>
+                            <constraint firstItem="Yft-C2-ab6" firstAttribute="trailing" secondItem="AhD-pR-wr6" secondAttribute="trailing" id="Bib-kr-pg5"/>
+                            <constraint firstItem="kKg-5t-unj" firstAttribute="leading" secondItem="Loa-xO-H21" secondAttribute="leading" id="E8a-7v-yA8"/>
                             <constraint firstItem="892-Sv-t0C" firstAttribute="top" secondItem="jGk-Ks-CDE" secondAttribute="bottom" constant="15" id="Gv8-LH-vZe"/>
                             <constraint firstItem="fcy-gX-xcn" firstAttribute="top" secondItem="AaW-Mi-eM5" secondAttribute="bottom" constant="409" id="HtR-dJ-tDN"/>
+                            <constraint firstItem="kKg-5t-unj" firstAttribute="trailing" secondItem="Loa-xO-H21" secondAttribute="trailing" id="IXZ-Qk-LoT"/>
+                            <constraint firstItem="Bg0-kV-wpd" firstAttribute="top" secondItem="Yft-C2-ab6" secondAttribute="bottom" constant="8" symbolic="YES" id="IuL-dm-uFQ"/>
+                            <constraint firstItem="Yft-C2-ab6" firstAttribute="leading" secondItem="AhD-pR-wr6" secondAttribute="leading" id="Ngc-my-Gbf"/>
                             <constraint firstItem="AhD-pR-wr6" firstAttribute="centerX" secondItem="AaW-Mi-eM5" secondAttribute="centerX" id="PBD-cb-LJm"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="top" secondItem="Bg0-kV-wpd" secondAttribute="bottom" constant="11" id="RxH-LG-WCg"/>
                             <constraint firstItem="AhD-pR-wr6" firstAttribute="centerX" secondItem="jGk-Ks-CDE" secondAttribute="centerX" id="SrZ-hC-fpx"/>
                             <constraint firstItem="AhD-pR-wr6" firstAttribute="top" secondItem="hgZ-jp-VG6" secondAttribute="top" id="UGq-SO-RDp"/>
+                            <constraint firstItem="Yft-C2-ab6" firstAttribute="trailing" secondItem="lyq-03-0bN" secondAttribute="trailing" id="WNS-Z7-j9K"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="leading" secondItem="892-Sv-t0C" secondAttribute="leading" id="XI3-ZK-Ied"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="leading" secondItem="AaW-Mi-eM5" secondAttribute="leading" id="Z7S-7C-84R"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lyq-03-0bN" secondAttribute="bottom" constant="-2" id="bWb-sS-GYp"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="leading" secondItem="hgZ-jp-VG6" secondAttribute="leadingMargin" id="hGe-zu-wNY"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="top" secondItem="hgZ-jp-VG6" secondAttribute="top" constant="107" id="lr0-b0-hMl"/>
                             <constraint firstItem="Bg0-kV-wpd" firstAttribute="top" secondItem="AhD-pR-wr6" secondAttribute="bottom" constant="53" id="mFD-Lg-SwT"/>
+                            <constraint firstItem="kKg-5t-unj" firstAttribute="top" secondItem="AaW-Mi-eM5" secondAttribute="bottom" constant="8" symbolic="YES" id="qN6-6e-SeP"/>
                             <constraint firstItem="jGk-Ks-CDE" firstAttribute="leading" secondItem="Bg0-kV-wpd" secondAttribute="leading" id="vve-4Z-mZb"/>
+                            <constraint firstItem="Loa-xO-H21" firstAttribute="top" secondItem="hgZ-jp-VG6" secondAttribute="top" constant="146" id="vwB-nw-igU"/>
+                            <constraint firstItem="892-Sv-t0C" firstAttribute="top" secondItem="Loa-xO-H21" secondAttribute="bottom" constant="8" symbolic="YES" id="vwT-JA-Ij5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Map" id="w5D-iV-MN1">
-                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
-                    </tabBarItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="SliderRadius" destination="AaW-Mi-eM5" id="1Tp-K5-gpY"/>
@@ -820,114 +858,57 @@
             </objects>
             <point key="canvasLocation" x="2441.5" y="1406.5"/>
         </scene>
-        <!--Haircutter List View Controller-->
+        <!--Haircutter Table View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="HaircutterListViewController" customModule="JoliCut" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                <viewController id="8rJ-Kc-sve" customClass="HaircutterTableViewController" customModule="JoliCut" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="28" id="034-bg-cPs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9q-wK-LKH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="RcL-VF-SzA"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFt-k7-ZkU">
-                                <rect key="frame" x="0.0" y="53" width="375" height="65"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HaircutterTableViewCell" id="Vj7-iw-iEc" customClass="HaircutterTableViewCell" customModule="JoliCut" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vj7-iw-iEc" id="K2i-H8-QuH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pfw-fq-hfF">
+                                            <rect key="frame" x="8" y="6" width="77" height="77"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name and details of Pro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-LA-unb">
+                                            <rect key="frame" x="93" y="8" width="274" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFL-sB-J98">
+                                            <rect key="frame" x="93" y="42" width="158" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vl-bT-ffS">
+                                            <rect key="frame" x="259" y="42" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="PJh-uT-tBF" kind="show" id="MY6-SE-8jN"/>
+                                    <outlet property="nameLabel" destination="gQr-LA-unb" id="2gg-yC-GYG"/>
+                                    <outlet property="photoImageView" destination="Pfw-fq-hfF" id="Q6X-Za-hFo"/>
                                 </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2l-ej-mCl">
-                                <rect key="frame" x="11" y="53" width="64" height="65"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6m-5H-psw">
-                                <rect key="frame" x="325" y="97" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vt-Dd-0VN">
-                                <rect key="frame" x="325" y="68" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqz-uk-am0">
-                                <rect key="frame" x="83" y="58" width="242" height="60"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76z-Ap-Ttj">
-                                <rect key="frame" x="83" y="53" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-fy-CK4">
-                                <rect key="frame" x="0.0" y="43" width="375" height="2"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="85e-Zh-3A3">
-                                <rect key="frame" x="0.0" y="126" width="375" height="2"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58Z-JV-h7d">
-                                <rect key="frame" x="11" y="136" width="64" height="65"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSD-B9-MmB">
-                                <rect key="frame" x="325" y="180" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jS-it-3eL">
-                                <rect key="frame" x="325" y="151" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ7-Gg-jsv">
-                                <rect key="frame" x="83" y="141" width="242" height="60"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgu-v9-Tcr">
-                                <rect key="frame" x="83" y="136" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCd-pH-D4S">
-                                <rect key="frame" x="0.0" y="209" width="375" height="2"/>
-                            </imageView>
-                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-Ef-8Yk">
-                                <rect key="frame" x="0.0" y="209" width="45" height="45"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="n9q-wK-LKH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="GVe-Mn-27e"/>
-                            <constraint firstItem="n9q-wK-LKH" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="c9V-RI-hnY"/>
-                            <constraint firstAttribute="trailing" secondItem="n9q-wK-LKH" secondAttribute="trailing" id="t83-op-0fi"/>
-                        </constraints>
-                    </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="" image="List-2" id="nLg-fX-ih6">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="Details" destination="Vqz-uk-am0" id="63S-s2-MdH"/>
-                        <outlet property="Field" destination="V2l-ej-mCl" id="Ciy-M0-MLs"/>
-                        <outlet property="Name" destination="76z-Ap-Ttj" id="IKu-gO-FIc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -1015,6 +996,43 @@
                     <view key="view" contentMode="scaleToFill" id="PHR-K8-sY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ves-Sv-7ys">
+                                <rect key="frame" x="83" y="38" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="asb-zC-XNv">
+                                <rect key="frame" x="0.0" y="111" width="375" height="2"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47F-eO-QRw">
+                                <rect key="frame" x="325" y="53" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uy-fd-QjW">
+                                <rect key="frame" x="83" y="43" width="242" height="60"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-Jc-31l">
+                                <rect key="frame" x="11" y="38" width="64" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-7y-7Nt">
+                                <rect key="frame" x="0.0" y="28" width="375" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtQ-jW-t0D">
+                                <rect key="frame" x="11" y="38" width="364" height="65"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terminé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgK-pJ-CTv">
+                                <rect key="frame" x="301" y="82" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.24093936860000001" green="0.89298447989999996" blue="0.23781334539999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="facture" id="31Q-3B-Sw1">
@@ -1078,6 +1096,78 @@
                     <view key="view" contentMode="scaleToFill" id="Tl4-ZV-3YX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgS-AX-beK">
+                                <rect key="frame" x="83" y="38" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="ztb-1N-8dO">
+                                <rect key="frame" x="0.0" y="111" width="375" height="2"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdA-DR-JmR">
+                                <rect key="frame" x="325" y="53" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-S5-cn5">
+                                <rect key="frame" x="83" y="43" width="242" height="60"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-mm-bCK">
+                                <rect key="frame" x="301" y="82" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.89298447989999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLg-dj-fQg">
+                                <rect key="frame" x="11" y="38" width="64" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-9Q-MLJ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na0-XJ-Wa0">
+                                <rect key="frame" x="11" y="38" width="364" height="65"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-yO-Tre">
+                                <rect key="frame" x="83" y="121" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="XXR-AK-Raz">
+                                <rect key="frame" x="0.0" y="194" width="375" height="2"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VM0-Ww-yeu">
+                                <rect key="frame" x="325" y="136" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desriptions / services proposé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rO-JS-yP4">
+                                <rect key="frame" x="83" y="126" width="242" height="60"/>
+                                <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emg-Rq-8I2">
+                                <rect key="frame" x="301" y="165" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" red="0.89298447989999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gCy-GO-nKd">
+                                <rect key="frame" x="11" y="121" width="64" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="CqI-LQ-K7K">
+                                <rect key="frame" x="0.0" y="111" width="375" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2o-tt-jTj">
+                                <rect key="frame" x="11" y="121" width="364" height="65"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Cut-1" id="rzo-Fd-rOD">
@@ -1402,11 +1492,11 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pma-uu-vJ0">
-                                <rect key="frame" x="46" y="577" width="283" height="29"/>
-                                <color key="backgroundColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="577" width="335" height="29"/>
                                 <segments>
                                     <segment title="coupe"/>
                                     <segment title="coupe+brushing"/>
+                                    <segment title="Coupe / Brushing"/>
                                 </segments>
                                 <color key="tintColor" red="0.91764705879999997" green="0.68235294120000001" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
@@ -1932,9 +2022,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="LMM-kT-D2G"/>
         <segue reference="vgZ-Zt-KiY"/>
-        <segue reference="1Ob-Z9-sqI"/>
-        <segue reference="HK6-kV-baq"/>
-        <segue reference="BoW-Zm-mXM"/>
+        <segue reference="UGu-xN-1de"/>
+        <segue reference="Ivu-S0-STu"/>
+        <segue reference="NoZ-br-O7U"/>
         <segue reference="99g-7Y-boN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
