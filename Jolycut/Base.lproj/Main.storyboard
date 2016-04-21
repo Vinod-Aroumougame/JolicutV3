@@ -1892,14 +1892,14 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BoW-Zm-mXM"/>
-        <segue reference="99g-7Y-boN"/>
-        <segue reference="7xO-vL-maw"/>
-        <segue reference="Hdy-Qb-ZXh"/>
         <segue reference="HK6-kV-baq"/>
         <segue reference="vgZ-Zt-KiY"/>
         <segue reference="1Ob-Z9-sqI"/>
+        <segue reference="juO-VL-6X5"/>
         <segue reference="LMM-kT-D2G"/>
+        <segue reference="Hdy-Qb-ZXh"/>
+        <segue reference="7xO-vL-maw"/>
+        <segue reference="99g-7Y-boN"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

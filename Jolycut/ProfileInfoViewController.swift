@@ -21,6 +21,9 @@ class ProfileInfoViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let touch: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.CloseKeyboard))
+        view.addGestureRecognizer(touch)
+        
         nom.text = (User.Lastname as String)
         prenom.text = (User.Firstname as String)
         email.text = (User.Email as String)
