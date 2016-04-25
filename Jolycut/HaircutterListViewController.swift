@@ -36,7 +36,6 @@ class HaircutterListViewController: UIViewController, UITextFieldDelegate, UIIma
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         photoImageView.image = selectedImage
-        print("1")
         dismissViewControllerAnimated(true, completion: nil)
     }
     

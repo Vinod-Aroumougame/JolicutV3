@@ -34,9 +34,6 @@ class HaircutterTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func ActionButton(sender: AnyObject) {
-        print("touched")
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
