@@ -12,7 +12,9 @@ class HaircutterTableViewCell: UITableViewCell {
     // MARK: Properties
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var kindLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ugly: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +23,8 @@ class HaircutterTableViewCell: UITableViewCell {
     
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+        print(ugly.text!)
+        User.selectedpro = ugly.text!
         // Configure the view for the selected state
     }
 

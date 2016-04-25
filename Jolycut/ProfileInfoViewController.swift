@@ -21,8 +21,6 @@ class ProfileInfoViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let touch: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.CloseKeyboard))
-        view.addGestureRecognizer(touch)
         
         nom.text = (User.Lastname as String)
         prenom.text = (User.Firstname as String)
@@ -114,7 +112,7 @@ class ProfileInfoViewController: UIViewController, UITextFieldDelegate {
         while (MyVariables.ErrorCode != 200 || MyVariables.ErrorCode != 404)
         {
             task.resume()
-            print(MyVariables.data)
+            print(MyVariables.ErrorCode)
             if (MyVariables.ErrorCode == 200)
             {
                 MyVariables.ErrorCode = 0
@@ -131,10 +129,5 @@ class ProfileInfoViewController: UIViewController, UITextFieldDelegate {
             }
         }
         return false
-    }
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
 }

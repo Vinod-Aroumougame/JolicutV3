@@ -13,14 +13,25 @@ import CoreLocation
 class MapParamsViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet var SliderRadius: UISlider!
+    @IBOutlet weak var TypeOfServiceButton: UISegmentedControl!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        SliderRadius.value = Float(Int(MapParams.SearchRadius)!)
+        if (MapParams.TypeOfService == "coupe") {
+            TypeOfServiceButton.selectedSegmentIndex = 0
+        }
+        else if (MapParams.TypeOfService == "brushing") {
+            TypeOfServiceButton.selectedSegmentIndex = 1
+        }
+        else {
+            TypeOfServiceButton.selectedSegmentIndex = 2
+        }
+            SliderRadius.value = Float(Int(MapParams.SearchRadius)!)
     }
     @IBAction func change(sender: AnyObject) {
         let temp = Int(SliderRadius.value)
+        MapParams.TypeOfService = TypeOfServiceButton.titleForSegmentAtIndex(TypeOfServiceButton.selectedSegmentIndex)! as String
         MapParams.SearchRadius = String(format:"%i", temp)
         performSegueWithIdentifier("Change", sender: self)
     }

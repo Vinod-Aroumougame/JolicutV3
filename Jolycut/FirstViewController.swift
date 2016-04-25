@@ -40,7 +40,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
             print(User.Long)
             
             let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03))
             self.MapView.setRegion(region, animated: true)
             locationManager.stopUpdatingLocation()
             upload_request()
@@ -55,15 +55,14 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
             let longitude = USERDATA[14].componentsSeparatedByString("\":\"")[1]
             let Name = USERDATA[1].componentsSeparatedByString("\":\"")[1]
             let Kind = USERDATA[3].componentsSeparatedByString("\":\"")[1]
-            let theSpan:MKCoordinateSpan = MKCoordinateSpanMake(0.01 , 0.01)
             let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: Double(lattitude)!, longitude: Double(longitude)!)
-            var annotation1 = MKPointAnnotation()
+            let annotation1 = MKPointAnnotation()
             annotation1.coordinate = location2
             annotation1.title = Name
             annotation1.subtitle = Kind
             MapView.addAnnotation(annotation1)
             print(annotation1.title)
-            i++;
+            i += 1;
         }
     }
     
@@ -71,7 +70,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
     {
         print("ICI !")
         print(MapParams.SearchRadius)
-        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/brushing/"+MapParams.SearchRadius)!
+        let url:NSURL = NSURL(string:"http://92.222.74.85/api/getPrestataire/"+((User.Latt) as String)+"/"+((User.Long) as String)+"/"+MapParams.TypeOfService+"/"+MapParams.SearchRadius)!
         let session = NSURLSession.sharedSession()
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
@@ -103,7 +102,9 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
                 print(MapParams.EachProUser[1])
                 print("lenght")
                 print(MapParams.EachProUser.count)
-                self.addMarkers()
+                if (MapParams.EachProUser.count > 0) {
+                    self.addMarkers()
+                }
         });
         task.resume()
     }

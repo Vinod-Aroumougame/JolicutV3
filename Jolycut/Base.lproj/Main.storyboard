@@ -173,28 +173,28 @@
                                 </constraints>
                                 <color key="barTintColor" red="0.16862745100000001" green="0.16078431369999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                             </navigationBar>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-Ks-CDE">
-                                <rect key="frame" x="16" y="107" width="343" height="35"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jGk-Ks-CDE">
+                                <rect key="frame" x="16" y="110" width="343" height="29"/>
                                 <segments>
-                                    <segment title="Coupe"/>
-                                    <segment title="Brushing"/>
-                                    <segment title="Coupe / Brushing"/>
+                                    <segment title="coupe"/>
+                                    <segment title="brushing"/>
+                                    <segment title="coupe+brushing"/>
                                 </segments>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="11" minValue="1" maxValue="16" translatesAutoresizingMaskIntoConstraints="NO" id="AaW-Mi-eM5">
-                                <rect key="frame" x="14" y="179" width="347" height="31"/>
+                                <rect key="frame" x="14" y="228" width="347" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nWR-tT-ZVl"/>
                                 </constraints>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prestation recherché" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg0-kV-wpd">
-                                <rect key="frame" x="16" y="75" width="157" height="21"/>
+                                <rect key="frame" x="16" y="75" width="176" height="21"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="892-Sv-t0C">
-                                <rect key="frame" x="16" y="156" width="67" height="15"/>
+                                <rect key="frame" x="16" y="156" width="71" height="64"/>
                                 <fontDescription key="fontDescription" name="Comfortaa" family="Comfortaa" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -212,7 +212,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="séparateur.png" translatesAutoresizingMaskIntoConstraints="NO" id="kKg-5t-unj">
-                                <rect key="frame" x="0.0" y="217" width="375" height="2"/>
+                                <rect key="frame" x="0.0" y="266" width="375" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="yaQ-qe-I4r"/>
                                 </constraints>
@@ -235,7 +235,7 @@
                             <constraint firstItem="AhD-pR-wr6" firstAttribute="leading" secondItem="hgZ-jp-VG6" secondAttribute="leading" id="3jK-5V-yh0"/>
                             <constraint firstItem="kKg-5t-unj" firstAttribute="trailing" secondItem="Yft-C2-ab6" secondAttribute="trailing" id="3jl-tx-o12"/>
                             <constraint firstAttribute="trailing" secondItem="AhD-pR-wr6" secondAttribute="trailing" id="4si-K0-1Bt"/>
-                            <constraint firstItem="lyq-03-0bN" firstAttribute="top" secondItem="fcy-gX-xcn" secondAttribute="top" id="72y-7R-CNs"/>
+                            <constraint firstItem="lyq-03-0bN" firstAttribute="top" secondItem="fcy-gX-xcn" secondAttribute="top" constant="-49" id="72y-7R-CNs"/>
                             <constraint firstItem="AaW-Mi-eM5" firstAttribute="top" secondItem="892-Sv-t0C" secondAttribute="bottom" constant="8" id="8No-BT-Xb2"/>
                             <constraint firstItem="Yft-C2-ab6" firstAttribute="leading" secondItem="lyq-03-0bN" secondAttribute="leading" id="AgW-Mf-Rx2"/>
                             <constraint firstItem="Yft-C2-ab6" firstAttribute="trailing" secondItem="AhD-pR-wr6" secondAttribute="trailing" id="Bib-kr-pg5"/>
@@ -265,6 +265,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="SliderRadius" destination="AaW-Mi-eM5" id="1Tp-K5-gpY"/>
+                        <outlet property="TypeOfServiceButton" destination="jGk-Ks-CDE" id="jHm-PI-0tt"/>
                         <segue destination="49e-Tb-3d3" kind="presentation" identifier="Change" modalTransitionStyle="coverVertical" id="Ivu-S0-STu"/>
                     </connections>
                 </viewController>
@@ -345,7 +346,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-Uf-Yv9">
-                                <rect key="frame" x="148" y="66" width="78" height="73"/>
+                                <rect key="frame" x="113" y="36" width="148" height="134"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="NO"/>
@@ -659,7 +660,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pho-K6-MzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523.5" y="2152.5"/>
+            <point key="canvasLocation" x="2441.5" y="2146.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MmY-zC-CHE">
@@ -880,26 +881,28 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name and details of Pro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQr-LA-unb">
                                             <rect key="frame" x="93" y="8" width="274" height="26"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Informations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFL-sB-J98">
                                             <rect key="frame" x="93" y="42" width="158" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vl-bT-ffS">
-                                            <rect key="frame" x="259" y="42" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aue-5C-ZZt">
+                                            <rect key="frame" x="367" y="29" width="0.0" height="3"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="kindLabel" destination="lFL-sB-J98" id="B4e-58-H2k"/>
                                     <outlet property="nameLabel" destination="gQr-LA-unb" id="2gg-yC-GYG"/>
                                     <outlet property="photoImageView" destination="Pfw-fq-hfF" id="Q6X-Za-hFo"/>
+                                    <outlet property="ugly" destination="aue-5C-ZZt" id="lhw-a9-AWW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -973,7 +976,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Back:" destination="Q30-Qr-PPs" eventType="touchUpInside" id="rY9-Ck-LFt"/>
-                                    <segue destination="8rJ-Kc-sve" kind="show" id="99g-7Y-boN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1094,7 +1096,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oyH-U5-ZM2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tl4-ZV-3YX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgS-AX-beK">
@@ -1253,6 +1255,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Quit:" destination="dwx-d7-AJ2" eventType="touchUpInside" id="lrF-lf-MI6"/>
+                                    <segue destination="1Gh-nR-UdD" kind="show" identifier="Quit" id="wwd-eW-UfA"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ack.png" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-RT-Egi">
@@ -2020,12 +2023,11 @@
         <image name="tool.png" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LMM-kT-D2G"/>
-        <segue reference="vgZ-Zt-KiY"/>
-        <segue reference="UGu-xN-1de"/>
-        <segue reference="Ivu-S0-STu"/>
         <segue reference="NoZ-br-O7U"/>
-        <segue reference="99g-7Y-boN"/>
+        <segue reference="Ivu-S0-STu"/>
+        <segue reference="UGu-xN-1de"/>
+        <segue reference="vgZ-Zt-KiY"/>
+        <segue reference="LMM-kT-D2G"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

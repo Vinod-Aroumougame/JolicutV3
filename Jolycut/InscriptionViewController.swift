@@ -2,7 +2,7 @@
 //  InscriptionViewController.swift
 //  JoliCut
 //
-//  Created by Charles SALVAN on 19/04/16.
+//  Created by Quentin LE GAL on 19/04/16.
 //  Copyright © 2016 Vinod AROUMOUGAME. All rights reserved.
 //
 

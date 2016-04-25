@@ -12,14 +12,18 @@ class Haircutter {
     // MARK: Properties
     
     var name: String
+    var kind: String
     var photo: UIImage?
+    var array: NSString
     
     // MARK: Initialization
     
-    init?(name: String, photo: UIImage?) {
+    init?(array: NSString, name: String, kind: String, photo: UIImage?) {
         // Initialize stored properties.
         self.name = name
+        self.kind = kind
         self.photo = photo
+        self.array = array
         
         // Initialization should fail if there is no name or if the rating is negative.
         if name.isEmpty {

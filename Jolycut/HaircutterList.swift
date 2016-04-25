@@ -11,7 +11,7 @@ import UIKit
 class HaircutterTableViewController: UITableViewController {
     // MARK: Properties
     
-    var User = [Haircutter]()
+    var Users = [Haircutter]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,21 +22,23 @@ class HaircutterTableViewController: UITableViewController {
     
     func loadSampleMeals() {
         var i = 0
-        while ( i != 2)
+        while ( i != MapParams.EachProUser.count-1)
         {
             let USERDATA = MapParams.EachProUser[i].componentsSeparatedByString("\",\"")
             let Name = USERDATA[1].componentsSeparatedByString("\":\"")[1]
-            //let Kind = USERDATA[3].componentsSeparatedByString("\":\"")[1]
+            let Kind = USERDATA[3].componentsSeparatedByString("\":\"")[1]
             let photo1 = UIImage(named: "meal1")!
-            let Userx = Haircutter(name: Name, photo: photo1)!
-            User += [Userx]
-            i++;
+            let Userx = Haircutter(array: MapParams.EachProUser[i] as! NSString, name: Name, kind: Kind, photo: photo1)!
+            Users += [Userx]
+            i += 1;
         }
     }
     
+    @IBAction func ActionButton(sender: AnyObject) {
+        print("touched")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Table view data source
@@ -46,66 +48,17 @@ class HaircutterTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return User.count
+        return Users.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "HaircutterTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! HaircutterTableViewCell
-        
-        // Fetches the appropriate meal for the data source layout.
-        let user = User[indexPath.row]
-        
+        let user = Users[indexPath.row]
         cell.nameLabel.text = user.name
+        cell.kindLabel.text = user.kind
         cell.photoImageView.image = user.photo
-        
+        cell.ugly.text = user.array as String
         return cell
     }
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-     if editingStyle == .Delete {
-     // Delete the row from the data source
-     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-     } else if editingStyle == .Insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
